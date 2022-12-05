@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.container h3 {
+    color: #444;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+}
+.color-select {
+    width: 100vw;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.color-select div{
+    background: lightcoral;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#grey {
+    background-color: rgb(237, 155, 4);
+    color: #444;
+    outline: 1px solid rgb(248, 0, 0);
+    
+}
+#orange {
+    background-color: #444;
+    color: #fff;
+}
+.images{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgchange {
+    margin-top: 30px;
+    width: 30%;
+    height: 200px;
+    background-size: cover;
+    animation: mianimacion infinite;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    position: relative;
+    transition: 1s repeat;
+    
+
+    
+}
+
+@keyframes mianimacion {
+    from { top: 150px; animation-timing-function: ease-out; }
+    25% { top: 50px;  animation-timing-function: ease-in; }
+    50% { top: 200px; animation-timing-function: ease-out; }
+    75% { top: 75px; animation-timing-function: ease-in; }
+     to { top: 150px; }
+    
+
+}
